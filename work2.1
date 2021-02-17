@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    cout << "введите переменные a b c для уравнения вида ax^2+bx+c=0  \n";
+    double a;
+    double b;
+    double c;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    double D = pow(b, 2) + 4 * a * c;
+    double x1 = ( (- b) + pow(D, 1 / 2)) / 2 * a;
+    double x2 = ( (- b) - pow(D, 1 / 2)) / 2 * a;
+    cout << " результат x1:\n" << x1 << endl;
+    cout << " результат x2:\n" << x2 << endl;
+
+     
+}
